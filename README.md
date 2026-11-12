@@ -1,16 +1,37 @@
-# React + Vite
+# 🍔 Restaurant Ordering System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive frontend web application built with **ReactJS** and **Bootstrap** that allows customers to browse a restaurant menu, filter dishes by category, view detailed meal descriptions, manage their shopping cart, add new menu items, and book table reservations.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+**Deployed Application (Vercel):** [https://restaurant-ordering-system-beta.vercel.app](https://restaurant-ordering-system-beta.vercel.app)  
+**GitHub Repository:** [https://github.com/52330305-oss/restaurant-ordering-system](https://github.com/52330305-oss/restaurant-ordering-system)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
+- **Interactive Menu (`Home`):** Browse available dishes with real-time category filtering (Appetizers, Salads, Main Courses, Desserts, Drinks) and search functionality.
+- **Dynamic Meal Details (`Meal Details`):** View full ingredients, pricing, and descriptions for any selected meal via dynamic routing.
+- **Shopping Cart Management (`Cart`):** Add meals to the cart, view live item count badges in the navigation bar, remove individual items, calculate total order cost, and complete checkout.
+- **Menu Administration (`Add Meal`):** Add new dishes dynamically to the menu with title, price, category, description, and image URL.
+- **Table Reservations (`Reservations`):** Interactive booking form allowing guests to reserve tables by date, time, and party size.
+- **About & Contact Pages (`About`, `Contact`):** Restaurant story, operating hours, location details, and a functional customer inquiry form.
+- **Responsive Design:** Fully optimized layout for desktop, tablet, and mobile screens using Bootstrap 5.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
+- **Frontend Library:** ReactJS (Hooks: `useState`)
+- **Routing:** React Router DOM (`BrowserRouter`, `Routes`, `Route`, `Link`, `useLocation`)
+- **Styling:** Bootstrap 5 & Custom CSS
+- **Build Tool:** Vite
+- **Version Control & Hosting:** Git, GitHub, and Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Setup & Installation Instructions
+
+To run this project locally on your machine, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/52330305-oss/restaurant-ordering-system.git](https://github.com/52330305-oss/restaurant-ordering-system.git)
