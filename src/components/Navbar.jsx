@@ -30,15 +30,15 @@ function Navbar({ cartCount }) {
             Contact
           </Link>
 
-          {/* زر السلة */}
-          <span className="btn btn-outline-warning btn-sm position-relative ms-2">
+          {/* زر السلة كرابط يفتح صفحة السلة */}
+          <Link to="/cart" className="btn btn-outline-warning btn-sm position-relative ms-2">
             🛒 Cart
             {cartCount > 0 && (
               <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 {cartCount}
               </span>
             )}
-          </span>
+          </Link>
         </div>
       </div>
     </nav>

@@ -10,6 +10,7 @@ import AddMeal from "./pages/AddMeal";
 import Reservations from "./pages/Reservations";
 import Contact from "./pages/Contact";
 import MealDetails from "./pages/MealDetails";
+import Cart from "./pages/Cart";
 
 function App() {
   const [meals, setMeals] = useState(initialData);
@@ -26,6 +27,14 @@ function App() {
   const handleAddToCart = (meal) => {
     setCart((prev) => [...prev, meal]);
     alert(`${meal.title} added to cart!`);
+  };
+
+  const handleRemoveFromCart = (indexToRemove) => {
+    setCart((prev) => prev.filter((_, index) => index !== indexToRemove));
+  };
+
+  const handleClearCart = () => {
+    setCart([]);
   };
 
   return (
@@ -53,6 +62,16 @@ function App() {
           <Route 
             path="/details" 
             element={<MealDetails onAddToCart={handleAddToCart} />} 
+          />
+          <Route 
+            path="/cart" 
+            element={
+              <Cart 
+                cart={cart} 
+                onRemoveFromCart={handleRemoveFromCart} 
+                onClearCart={handleClearCart} 
+              />
+            } 
           />
         </Routes>
       </div>
